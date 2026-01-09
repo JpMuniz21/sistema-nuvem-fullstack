@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Papelaria JH 📄</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <form id="add-product-form">
+  <h1>Papelaria JH 📄</h1>
+    <h2>Adiconar Produto:</h2>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="price">Preço:</label>
+    <input type="number" id="price" name="price" required step="0.01">
+    <button type="submit">Adicionar</button>
+  </form>
+
+  <!-- Update product form (populated when user clicks Update) -->
+  <form id="update-product-form" style="margin-top:1em; display:none;">
+    <h2>Atualizar Produto:</h2>
+    <input type="hidden" id="update-id" name="id">
+    <label for="update-name">Nome:</label>
+    <input type="text" id="update-name" name="name" required>
+    <label for="update-price">Preço:</label>
+    <input type="number" id="update-price" name="price" required step="0.01">
+    <button type="submit">Salvar alterações</button>
+    <button type="button" id="cancel-update">Cancelar</button>
+  </form>
+
+  <ul id="products"></ul>
+
+  <script src="app.js"></script>
+  <script>
+    // Usa o fetchProducts() quando a pagina recarrega
+    window.addEventListener('load', fetchProducts);
+  </script>
+</body>
+</html>

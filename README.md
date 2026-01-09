@@ -1,6 +1,6 @@
 # ✏️ Papelaria (Protótipo em Nuvem)
 
-Este é um projeto introdutório desenvolvido para a disciplina de **Computação em Nuvem** na Unifor.
+Este é um projeto introdutório desenvolvido para a disciplina de **Desenvolvimento em Nuvem** na Unifor.
 
 O objetivo foi criar uma aplicação web simples e realizar o deploy (hospedagem) utilizando a infraestrutura da **AWS**.
 
